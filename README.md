@@ -1,7 +1,5 @@
-# LightPress CMS
+# LightPress CMS (v1.0)
 A lightweight blog engine, written in AngularJS, PHP and SQLite.
-
-#...Available Soon...
 
 Why use it?
 - Write posts in **Markdown**
