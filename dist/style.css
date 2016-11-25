@@ -36,6 +36,7 @@ body{ font-size: 14px; font-family: 'PT Serif', serif; }
 
 .post .body > h2 { font-size: 24px; font-weight: bold; margin-top: 45px; color: #2a2a2a; text-transform: capitalize; }
 .post .body > p { margin: 15px 0 15px 0; }
+.post .body li { margin-left: 25px; }
 .post .body strong { color : #D44950; background: #F7F7F9; padding: 0 4px 0 4px; }
 .post .body p.img { display: block; text-align: center; }
 
