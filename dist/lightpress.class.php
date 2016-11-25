@@ -1,6 +1,6 @@
 <?php
 	/*
-	* lightpress cms (Nov 19 2016)
+	* lightpress cms (Nov 25 2016)
 	* https://github.com/codeeverywhereca/lightpresscms
 	* Copyright 2016, http://codeeverywhere.ca
 	* Licensed under the MIT license.
