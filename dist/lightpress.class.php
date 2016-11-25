@@ -43,6 +43,18 @@ class lightpress {
 		}, $str);
 	}
 	
+	private function formatList($str) {
+		return preg_replace_callback( '/```list([\s\S]+?)```/i', function($matches){
+			$lines = explode(PHP_EOL, trim($matches[1]));
+			$list = "<ul class=\"list\">\n";
+			for( $x=0; $x<count($lines); $x++ ) {
+			    $list .= "\t\t\t\t\t<li>{$lines[$x]}</li>\n";
+			}
+			$list .= "</ul>";
+			return $list;			
+		}, $str);
+	}
+	
 	private function formatCode($str) {
 		return preg_replace_callback( '/```(php|sql|js-inc|css-inc|html|js|css)([\s\S]+?)```/i', function($matches) {
 			if( in_array($matches[1], array("js", "html", "css", "js-inc", "css-inc") ) ) {
@@ -148,6 +160,7 @@ class lightpress {
 		$html_content = preg_replace('/```quotes?([\s\S]+?)```/i', "<pre class=\"quote\">$1</pre>", $html_content);
 		
 		$html_content = $this->formatTable($html_content);
+		$html_content = $this->formatList($html_content);
 		$html_content = $this->formatCode($html_content);
 		$html_content = $this->formatTerminal($html_content);
 		
