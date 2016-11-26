@@ -126,7 +126,7 @@ class lightpress {
 				
 		// Order Of Operations Is Important!!!
 		// Format HEADING ... #some post heading
-		$html_content = preg_replace('/\r?\n?#\s*([a-z0-9_\-@$+%\)\(, \.]+)/i', "\n\t\t\t\t\t<h2>$1</h2>\n", $html_content);
+		$html_content = preg_replace('/\r?\n?#\s*([a-z0-9_\-@\?$+%\)\(, \.]+)/i', "\n\t\t\t\t\t<h2>$1</h2>\n", $html_content);
 		
 		// Format BOLD ... **bold text**
 		$html_content = preg_replace('/\*\*(.+?)\*\*/', '<strong>$1</strong>', $html_content);
