@@ -40,6 +40,8 @@ To add a quote use \`\`\`quote ... \`\`\`
 
 To add a table use \`\`\`table ... \`\`\`
 
+To add a list use \`\`\`list ... \`\`\`
+
 To add a skip block use \`\`\`skip ... \`\`\`
 
 ## Code Block Table Example
